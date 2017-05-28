@@ -1,4 +1,5 @@
 <aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
+  <div style="margin: 5px" class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="dzumwalt"><a class="LI-simple-link" href='https://www.linkedin.com/in/dzumwalt?trk=profile-badge'>Dan Zumwalt</a></div>
   <% theme.widgets.forEach(function(widget){ %>
     <%- partial('_widget/' + widget) %>
   <% }) %>
