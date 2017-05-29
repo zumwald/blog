@@ -1,0 +1,115 @@
+@import "nib"
+@import "_variables"
+
+global-reset()
+
+@font-face
+  font-family: FontAwesome
+  font-style: normal
+  font-weight: 200
+  src: url(font-icon-path + ".eot?v=#" + font-icon-version)
+  src: url(font-icon-path + ".eot?#iefix&v=#" + font-icon-version) format("embedded-opentype"),
+       url(font-icon-path + ".woff?v=#" + font-icon-version) format("woff"),
+       url(font-icon-path + ".ttf?v=#" + font-icon-version) format("truetype"),
+       url(font-icon-path + ".svg#fontawesomeregular?v=#" + font-icon-version) format("svg")
+
+body
+  background: color-grey
+  font: font-size font-sans
+  -webkit-text-size-adjust: 100%
+
+main
+  height: 100%
+
+/* page container */
+.page
+  height: auto
+  width: 80%
+  max-width: 800px
+  margin-top: 2.5rem
+  margin-left: auto
+  margin-right: auto
+  background: color-background
+  padding: 1rem
+  border-radius: 0.15rem
+
+
+/* header */
+header
+  padding-top: 0.25rem
+  padding-bottom: 0.25rem
+
+header h1
+  font-size: x-large
+  font-weight: 800
+  padding-bottom: 0.25rem
+
+header h2
+  font-size: large
+  font-weight: 750
+  border-bottom: 0.07142855em double #444
+
+header h3
+  padding-top: 0.5rem
+
+header h3,
+article h2
+  font-weight: 600
+  font-size: larger
+
+header p
+  padding-top: 0.5em
+  padding-bottom: 0.5em
+
+.top-pad
+  padding-top: 0.5rem
+
+.bottom-pad
+  padding-bottom: 0.5rem
+
+header h1, header h2, .center
+  text-align: center
+
+/* document */
+p, li, .indent
+  padding-left: 0.25rem
+
+article
+  padding-top: 0.5rem
+  padding-bottom: 0.5rem
+  border-top: 0.07142855em double #444
+
+section h3, .h3
+  padding-top: 0.5rem
+  font-weight: 500
+  font-size: normal
+
+article p, .top-pad
+  padding-top: 0.25rem
+
+section ul li, .indented-list
+  padding-left: 0.75rem
+
+
+.outer
+  clearfix()
+  max-width: (column-width + gutter-width) * columns + gutter-width
+  margin: 0 auto
+  padding: 0 gutter-width
+
+.inner
+  column(columns)
+
+.left, .alignleft
+  float: left
+
+.right, .alignright
+  float: right
+
+.clear
+  clear: both
+
+@import "_extend"
+@import "_partial/header"
+@import "_partial/footer"
+@import "_partial/mobile"
