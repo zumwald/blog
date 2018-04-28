@@ -3,7 +3,7 @@ title: Hello World & SSL at Last
 date: 2018-04-28 09:47:11
 ---
 
-After an embarassingly long time I have finally disabled HTTP for this site. Of course, the only way to go about disabling HTTP was to properly support HTTPS. _This_ is what's been causing the delay (at least that's what I'd been telling myself), and today I finally decided to show myself just how silly that excuse has been.
+After an embarrassingly long time I have finally disabled HTTP for this site. Of course, the only way to go about disabling HTTP was to properly support HTTPS. _This_ is what's been causing the delay (at least that's what I'd been telling myself), and today I finally decided to show myself just how silly that excuse has been.
 
 Turns out, it was _beyond_ silly. Acquiring a certificate and configuring SSL was easier than spinning up the website (which was easy - perhaps a retroactive post on that another day). It was easier than getting started with [Hexo](hexo.io) to bootstrap the site's layout and authoring tooling. **It was less than an hour of work.**
 
