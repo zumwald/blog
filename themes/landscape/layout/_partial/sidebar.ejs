@@ -1,5 +1,15 @@
 <aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
   <div style="margin: 5px" class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="dzumwalt"><a class="LI-simple-link" href='https://www.linkedin.com/in/dzumwalt?trk=profile-badge'>Dan Zumwalt</a></div>
+  <div class="widget-wrap">
+    <h3 class="widget-title">Presentations</h3>
+    <div class="widget">
+      <ul class="archive-list">
+        <li class="archive-list-item">
+          <a class="archive-list-link" href="https://www.dropbox.com/s/0xqmwmnjb2rl1xg/EE_CareerPresentation_Nov2018.pptx?dl=0">11/19/2018 Career Planning for WWU EE Students</a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <% theme.widgets.forEach(function(widget){ %>
     <%- partial('_widget/' + widget) %>
   <% }) %>
